@@ -2,7 +2,7 @@ import React from 'react';
 import { Outlet } from 'react-router';
 import Navber from './Navber';
 
-const Root = () => {
+const Main = () => {
     return (
         <div>
             <Navber></Navber>
@@ -11,4 +11,4 @@ const Root = () => {
     );
 };
 
-export default Root;
+export default Main;
