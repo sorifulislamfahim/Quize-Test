@@ -30,16 +30,6 @@ const Navber = () => {
             </li>
             <li>
               <NavLink
-                to='/topics'
-                aria-label='Topics'
-                title='Topics'
-                className={({isActive}) => isActive ? 'font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400' }
-              >
-                Topics
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
                 to='/statics'
                 aria-label='Statics'
                 title='Statics'
@@ -124,16 +114,6 @@ const Navber = () => {
                           className={({isActive}) => isActive ? 'font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400' }
                         >
                           Home
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink
-                          to='/topics'
-                          aria-label='Topics'
-                          title='Topics'
-                          className={({isActive}) => isActive ? 'font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400' }
-                        >
-                          Topics
                         </NavLink>
                       </li>
                       <li>
