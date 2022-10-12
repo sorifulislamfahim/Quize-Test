@@ -1,9 +1,20 @@
 import React from 'react';
+import { useLoaderData } from 'react-router';
+import Course from './Course';
 
 const Home = () => {
+  const loadData = useLoaderData([]);
+  const coursesData = loadData.data;
+  
+
   return (
-    <div>
-      <h2>This is Home Part</h2>
+    <div className='grid grid-cols-4 gap-7 text-center mx-36 my-20'>
+      {
+        coursesData.map(course => <Course 
+            key={course.id}
+            course={course}
+            ></Course>)
+      }
     </div>
   );
 };
