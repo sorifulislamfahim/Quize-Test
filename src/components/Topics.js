@@ -9,7 +9,7 @@ const Topics = () => {
 
     return (
         <div className='text-center'>
-            <h2 className='text-blue-600 text-2xl font-mono font-semibold'>Quize Of {loadData.data.name}</h2>
+            <h2 className='text-blue-600 text-2xl font-mono font-semibold mt-5'>Quize Of {loadData.data.name}</h2>
             {
                 topicsData.map(quize => <Quize 
                 key={quize.id}

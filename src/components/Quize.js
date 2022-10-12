@@ -1,30 +1,30 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Quize = ({quize}) => {
     const {question, options} = quize;
     return (
-        <div className='shadow-xl p-10 m-14 rounded-lg'>
+        <div lassName='shadow-xl p-10 m-14 rounded-lg'>
+        <div className='flex'>
             <h1 className='text-xl text-yellow-500'> Quize: {question}</h1>
-            <ul className='sm:block md:grid grid-cols-2 m-2'>
-                <div className='flex border-solid border-2 border-indigo-400 rounded-lg p-5 m-5'>
-                    <input type="radio" />
-                    <li className='m-2'>{options[0]}</li>
-                </div>
-                <div className='flex border-solid border-2 border-indigo-400 rounded-lg p-5 m-5'>
-                    <input type="radio" />
-                    <li className='m-2'>{options[1]}</li>
-                </div>
-                <div className='flex border-solid border-2 border-indigo-400 rounded-lg p-5 m-5'>
-                    <input type="radio" />
-                    <li className='m-2'>{options[2]}</li>
-                </div>
-                <div className='flex border-solid border-2 border-indigo-400 rounded-lg p-5 m-5'>
-                    <input type="radio" />
-                    <li className='m-2'>{options[3]}</li>
-                </div>
-            </ul>
+            <FontAwesomeIcon icon={faArrowRight} />
+        </div>
+            <div>
+            {
+                options.map(option => <ul className=''>
+                        <div className='flex border-solid border-2 border-indigo-400 rounded-lg p-5 m-5'>
+                        <input type="radio" />
+                        <li className='m-2'>{option}</li>
+                        </div>
+                    </ul>
+                )
+            }
+            </div>
+            
         </div>
     );
 };
 
 export default Quize;
+
